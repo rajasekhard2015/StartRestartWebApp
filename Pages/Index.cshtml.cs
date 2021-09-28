@@ -41,8 +41,8 @@ namespace StartRestartWebApp.Pages
             var oldcallbackpath = _options.Value.ClientId;
 
             _options.Update(opt => {
-                opt.CallbackPath = "value1";
-                opt.ClientId = "value2";
+                opt.CallbackPath = "fdsfdgfdgfd";
+                opt.ClientId = "valugfdgfdgdfgfde2";
             });
 
            var newid= _options.Value.ClientId;
@@ -53,13 +53,15 @@ namespace StartRestartWebApp.Pages
 
             _smtpoptions.Update(opt =>
             {
-                opt.AbpMailingDefaultFromAddress = "sadsadsa";
-                opt.AbpMailingSmtpPort = "80";
+                opt.AbpMailingDefaultFromAddress = "sfsddsfdfggfdgf";
+                opt.AbpMailingSmtpPort = "gfdgfdgfd";
             });
 
 
 
             _applicationShutdown.StopApplication();
+            
+
             return Page();
         }
     }
